@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio | Tu Nombre</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div id="preloader">
+    <div class="preloader-content">
+      <span id="preloader-percent">0%</span>
+    </div>
+  </div>
+  <canvas id="star-canvas"></canvas>
+  <div class="grain"></div>
+  <nav>
+    <ul>
+      <li><a href="#inicio" class="nav-link">Inicio</a></li>
+      <li><a href="#about" class="nav-link">Sobre Mi</a></li>
+      <li><a href="#portfolio" class="nav-link">Portafolio</a></li>
+      <li><a href="#contact" class="nav-link">Contacto</a></li>
+    </ul>
+  </nav>
+  <section id="inicio" class="section animated-section gradient-bg animated-bg reveal">
+    <div class="centered">
+      <h1 class="main-title reveal">Portafolio</h1>
+            <p class="main-subtitlee">Alejandro Sanchez Amezcua</p>
+      <p class="main-subtitle reveal">Diseñador Digital &amp; Ilustrador</p>
+    </div>
+  </section>
+  <section id="about" class="section animated-section alt-bg reveal">
+    <div class="about-container">
+      <div class="about-info reveal">
+        <img src="Img/Foto de autor.jpg" alt="Foto del autor" class="author-photo"/>
+        <h2 class="section-title reveal">Sobre mí</h2>
+        <p>Soy un diseñador digital apasionado por crear experiencias web innovadoras y visualmente impactantes. Combino creatividad y tecnología para llevar las ideas a la realidad.</p>
+      </div>
+      <div class="skills reveal">
+        <h3 class="skills-title">Habilidades</h3>
+        <div class="skill">
+          <span>Illustrator</span>
+          <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+        </div>
+        <div class="skill">
+          <span>Animación</span>
+          <div class="progress-bar"><div class="progress" style="width: 60%"></div></div>
+        </div>
+        <div class="skill">
+          <span>Ilustración</span>
+          <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+        </div>
+        <div class="skill">
+          <span>HTML/CSS/JS</span>
+          <div class="progress-bar"><div class="progress" style="width: 35%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="portfolio" class="section animated-section gradient-bg animated-bg reveal">
+    <h2 class="section-titlee reveal">Portafolio</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item timeline-card" data-index="1"><img src="Img/Captura de pantalla 2025-05-12 150300.png" alt="Proyecto 1"/><span>Billie Madre</span></div>
+      <div class="portfolio-item timeline-card" data-index="2"><img src="Img/persona_mockup.png" alt="Proyecto 2"/><span>Figma</span></div>
+      <div class="portfolio-item timeline-card" data-index="3"><img src="Img/Columpio.png" alt="Proyecto 3"/><span>Ilustración</span></div>
+      <div class="portfolio-item timeline-card" data-index="4"><img src="Img/MagazineMockupV3.png" alt="Proyecto 4"/><span>Nintendo</span></div>
+      <div class="portfolio-item timeline-card" data-index="5"><img src="Img/Splatoon.png" alt="Proyecto 5"/><span>Splatoon</span></div>
+      <div class="portfolio-item timeline-card" data-index="6"><img src="Img/Nitw_Postcards.png" alt="Proyecto 6"/><span>Nitw</span></div>
+      <div class="portfolio-item timeline-card" data-index="7"><img src="Img/Foto.jpg" alt="Proyecto 7"/><span>Jardin del Ser</span></div>
+      <div class="portfolio-item timeline-card" data-index="8"><img src="Img/Los hombres no lloran_mockup.png" alt="Proyecto 8"/><span>Los hombres NO lloran</span></div>
+      <div class="portfolio-item timeline-card" data-index="9"><img src="Img/Vuala.png" alt="Proyecto 9"/><span>Vuala</span></div>
+      <div class="portfolio-item timeline-card" data-index="10"><img src="Img/Magnolia.png" alt="Proyecto 10"/><span>Magnolia</span></div>
+    </div>
+  </section>
+  <section id="contact" class="section animated-section alt-bg reveal">
+    <h2 class="section-title reveal">Contacto</h2>
+    <form class="contact-form reveal">
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit" class="button">Enviar</button>
+    </form>
+    <div class="contact-info reveal">
+      <p>Email: <a href="mailto:tuemail@ejemplo.com">alejandro.sanchez06@upaep.mx</a></p>
+      <p>Tel: +22 2837 1080</p>
+      <p>Ubicación: Puebla, México</p>
+    </div>
+  </section>
+  <div id="portfolio-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+  <div id="star-cursor"></div>
+  <script src="script.js"></script>
+</body>
+</html>
